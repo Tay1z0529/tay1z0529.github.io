@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<title>電影藝術</title>
+<meta name="keywords" content="電影藝術">
+<meta name="description" content="電影藝術">
+<link rel="stylesheet" href="../style.css">
+<style>
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+</style>
+<script src="../movies/ex.js"></script>
+</head>
+<body>
+    <div id="all">
+        <div id="header">
+            <img src="../img/Home.png" width="80" height="80" alt="home" style="float: left" usemap="#Map2">
+            <map name="Map2">
+                <area shape="RECT" coords="0,0,80,80" href="../index.html">
+            </map>
+            <font face="DFKai-sb">電影藝術</font>
+        </div>
+        <div id="side" style="display:none">
+        <p><font size="7"><font face="DFKai-sb">目錄:</font></font></p>
+        <details>
+            <summary>
+                <a href="../genres/movie.html">電影簡介</a>
+            </summary>
+            <a href="../movie/movie1.html">什麼是電影</a><br>
+            <a href="../movie/movie2.html">電影藝術</a><br>
+            <a href="../movie/movie3.html">3D電影</a>
+        </details>
+        <details>
+            <summary><a href="../genres/moviecompany.html">世界主要電影公司</a></summary>
+            <a href="../moviecompany/ColumbiaPictures.html">哥倫比亞影業</a><br>
+            <a href="../moviecompany/Paramount.html">派拉蒙影業</a><br>
+            <a href="../moviecompany/UniversalStudios.html">環球影業</a><br>
+            <a href="../moviecompany/WaltDisney.html">華特迪士尼影業</a><br>
+            <a href="../moviecompany/WarnerBros.html">華納兄弟影業</a><br>
+            </details>
+            <details>
+                <summary>
+                <a href="../genres/MCU.html">漫威電影宇宙</a>
+                </summary>
+                <a href="MCU.html">漫威宇宙大綱</a><br>
+                <a href="MCU1.html">第一階段</a><br>
+                <a href="MCU2.html">第二階段</a><br>
+                <a href="MCU3.html">第三階段</a><br>
+                <a href="MCU4.html">第四階段</a><br>
+            </details>
+            <details>
+                <summary>
+                <a href="../genres/disaster.html">災難片</a>
+                </summary>
+                <a href="../movies/disaster.html">屍速列車</a><br>
+                <a href="../movies/disaster1.html">屍速列車:感染半島</a><br>
+                <a href="../movies/disaster2.html">惡靈古堡:最終章</a><br>
+            </details>
+            
+            <details>
+                <summary><a href="../genres/superhero.html">超級英雄</a></summary>
+                <a href="../movies/superhero1.html">黑豹</a>   <br>
+                <a href="../movies/superhero2.html">查克·史奈德之正義聯盟</a>
+                
+            </details>
+            
+            <details>
+                <summary>
+                    <a href="../genres/comingsoon.html">即將上映</a>
+                </summary>
+                <a href="../movies/comingsoon1.html">蜘蛛人：無家日</a><br>
+                <a href="../movies/comingsoon2.html">駭客任務:復活</a>
+            </details>
+            <details>
+                <summary>
+                    站長介紹1 
+                </summary>
+                <li><a href="../Webmaster/introduce.html">個人簡介</a></li>
+                <li><a href="../Webmaster/hobbies.html">興趣</a></li>
+                <li><a href="../Webmaster/education.html">學經歷</a></li>
+             </details>
+             <details>
+                <summary>
+                    站長介紹2
+                </summary>
+                <li><a href="../Webmaster1/index.html">站長連結</a></li>
+                    <li><a href="../Webmaster1/page-01.html">個人介紹</a></li>
+                    <li><a href="../Webmaster1/page-02.html">個人學歷</a></li>
+                    <li><a href="../Webmaster1/page-03.html">喜好興趣</a></li>
+                    <li><a href="../Webmaster1/page-04.html">工作經歷</a></li>
+                    <li><a href="../Webmaster1/page-05.html">感想心得</a></li>
+            </details>
+            
+            <br>
+        </div>
+        <div id="button">
+            <button class="button1" type="button"  onclick=hide()>收<br>起</button><br>
+            <button class="button1" type="button"  onclick=show()>展<br>開</button>
+        </div>
+            <div id="main">
+
+                <table border="1" align="center" >
+                    <tr>
+                        <span style="font-size:70px;">電影藝術</span><br>
+                    </tr>
+                    <p>電影也是綜合藝術，泛指幾種藝術形式綜合而成的藝術，<br>
+                        如歌曲綜合詩歌與音樂，建築綜合繪畫與雕塑，<br>
+                        戲劇綜合文學、表演、音樂、舞蹈、美術等。<br>
+                        但一般指語言、造型、表演三大藝術門類及相關技術綜合而成的戲劇、電影、電視劇等形式。<br>
+                        電影藝術將視覺藝術與聽覺藝術、時間藝術與空間藝術、<br>
+                        紀實藝術與表演藝術、再現藝術與表現藝術有機地綜合到一起。<br>
+                        特別是電影藝術綜合吸收了各門藝術的長處和特點，大大豐富了自己的藝術表現力。<br>
+                        電影是現代科學技術與藝術相結合的產物。電影藝術是通過畫面、聲音和蒙太奇等電影語言，<br>
+                        在銀幕上創造出感性直觀的形象，再現和表現生活的一門藝術。<br>
+                        由於電影誕生在音樂、舞蹈、繪畫、雕塑、戲劇、建築之後，所以常被人們稱作“第七藝術”。
+                           
+                    </p>
+                   
+                </table>
+                <br>
+                
+        </div>
+        <div id="footer">
+            <P>Copyright ©19+9A617004，21+9A717007  All Rights Reserved</P>
+        </div>
+    </div>
+</body>
+</html>
